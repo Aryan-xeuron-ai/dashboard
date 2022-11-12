@@ -14,28 +14,29 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(10.0),
-          child: SingleChildScrollView(
-            child: Column(
-              children: const [
-                SizedBox(
-                  height: 20,
-                ),
-                Glass(
-                  height: 250.0,
-                  width: 400.0,
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Positioned(
-
-                    child: GlassLine(
-                    height: 250.0,
-                    width: 250.0,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: const [
+              Glass(
+                height: 250.0,
+                width: 400.0,
+              ),
+              Positioned(
+                left: 0,
+                top: 250,
+                child: Padding(
+                  padding: EdgeInsets.only(
+                    top: 10,
+                    bottom: 10,
+                  ),
+                  child: GlassLine(
+                    height: 220.0,
+                    width: 220.0,
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

@@ -27,10 +27,7 @@ class GlassLine extends StatelessWidget{
           ),
           child: Row(
             children: const [
-              Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Line(),
-              ),
+              Line(),
             ],
           ),
         ),
