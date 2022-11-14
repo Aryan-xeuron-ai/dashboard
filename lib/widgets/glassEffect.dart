@@ -7,8 +7,9 @@ import '../constants/values.dart';
 class Glass extends StatelessWidget{
   final height;
   final width;
+  final child;
 
-  const Glass({Key? key,required this.height,required this.width}): super(key:key);
+  const Glass({Key? key,required this.height,required this.width,required this.child}): super(key:key);
 
   @override
   Widget build(BuildContext context){
@@ -24,11 +25,7 @@ class Glass extends StatelessWidget{
             sigmaX: 3,
             sigmaY: 3,
           ),
-          child: Row(
-            children: const [
-              Graph(),
-            ],
-          ),
+          child: child,
         ),
       ),
     );

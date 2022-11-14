@@ -40,6 +40,9 @@ dependencies:
   line_chart:
   intl:
   fl_chart:
+  fade_shimmer:
+  syncfusion_flutter_charts:
+  custom_refresh_indicator:
 
 dev_dependencies:
   flutter_test:
