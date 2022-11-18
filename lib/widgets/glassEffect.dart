@@ -1,15 +1,14 @@
 import 'dart:ui';
 
-import 'package:dashboard/widgets/graph.dart';
 import 'package:flutter/material.dart';
 import '../constants/values.dart';
 
-class Glass extends StatelessWidget{
+class glass extends StatelessWidget{
   final height;
   final width;
   final child;
 
-  const Glass({Key? key,required this.height,required this.width,required this.child}): super(key:key);
+  const glass({Key? key,required this.height,required this.width,required this.child}): super(key:key);
 
   @override
   Widget build(BuildContext context){
